@@ -1,0 +1,351 @@
+@charset "utf-8";
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,h1,h2,h3,h4,h5,h6,hr,fieldset,input{
+	margin:0;
+	padding:0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body{
+	width:100%;
+	height:100%;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: none;
+}
+i{
+	display: block;
+}
+.top{
+    width: 1000px;
+    height:100px;
+    background: #ffffff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top a:first-child{
+    display: block;
+    margin-top:17px;
+    width:330px;
+    height:65px;
+    float: left;
+}
+.top a:first-child img{
+    width: 210px;
+    height: 65px; 
+}
+.top a:last-child{
+    display: block;
+    width:540px;
+    height:100px;
+    float: right;
+}
+.bottom{
+    width: 100%;
+    height: 254px;   
+    background:#ffffff;
+    overflow: hidden;
+}
+.reg-con{
+     margin: 40px auto 0;
+     width: 1100px;
+     height: 115px;
+}
+.reg-list{
+    height: 29px;
+    width: 100%;
+}
+.reg-list  a{
+    display: block;
+    float:left;
+    padding:0 20px;
+    font-size:14px;
+    color:#666666;
+    background: url(../img/reg13.png) no-repeat right center;
+}
+.reg-list  a:last-child{
+    background: none;
+}
+.reg-licence{
+     height:24px;
+}
+.reg-licence span{
+    font-size:12px;
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    float:left;
+    color:#999999;
+}
+.reg-licence span:first-child{
+    margin-left:210px;
+    margin-right:50px;
+}
+.reg-licence a{
+    margin-left:20px;
+    display: block;
+    float:left;
+    line-height: 24px;
+    height: 24px;
+    font-size:12px;
+    color:#666666;
+}
+.pact{
+    width: 100%;
+    height: 32px;
+}
+.pact a{
+    color:#999999;
+    font-size:12px;
+    height: 32px;
+    line-height: 32px;
+}
+.pact span{
+    color:#999999;
+    font-size:12px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 20px;
+}
+.pact a:first-child{
+     margin-left:182px;
+}
+.picture{
+    width: 100%;
+    height: 32px;
+}
+.picture a:first-child img{
+    display: block;
+    float:left;
+    height: 32px;
+    width: 80px;
+    margin-left:500px;
+    margin-right: 20px;
+}
+.picture a:last-child img{
+    display: block;
+    float:left;
+    height: 32px;
+}
+
+.center{
+    height: 520px;
+    width: 100%;
+    background:#f8f8f8;
+    border-top:1px solid #eaeaec;
+    box-sizing: border-box;
+}
+.content-reg{
+    width: 1000px;
+    height: 520px;
+    margin:0 auto;
+    
+}
+.content-reg-left{
+    width: 400px;
+    height: 280px;
+    float:left;
+    display: block;
+    margin-top:120px;
+}
+.content-reg-left img{
+    display: block;   
+}
+.content-reg-right{
+    width: 350px;
+    height: 386px;
+    float: right;
+    margin-top:66px;
+    margin-right: 40px;
+    border: 1px solid #ececec;
+}
+.wel-reg{
+    width: 350px;
+    height:53px ;
+    line-height: 53px;
+    border-bottom: 1px solid #ececec;
+}
+.wel-reg p:first-child{
+    height:53px;
+    width: 100px;
+    float:left; 
+    margin-left:40px;
+    color:#e31436;
+    line-height: 53px;
+    font-size:16px;
+    font-weight: 600;
+}
+.wel-reg p:last-child{
+    height:53px;
+    width: 150px;
+    float: right; 
+    margin-right: 40px;
+}
+.wel-reg p:last-child span{
+    width: 100px;
+    color:#333333;
+    font-size:12px;
+    display: block;
+    float:left;
+    text-align: right;
+}
+.wel-reg p:last-child a{
+    width: 50px;
+    display: block;
+    float:left;
+    color:#51b8f1;
+    font-size:12px;
+    text-align: right;
+}
+.wel-reg p:last-child a:hover{
+    text-decoration: underline;
+}
+.reg-inf{
+    width: 270px;
+    height: 332px;
+    padding:0 40px;
+    background: #ffffff;
+    overflow: hidden;
+}
+.reg-inf form{
+    margin-top:35px;
+    width: 270px;
+    height: 280px;
+    position: relative;
+}
+.btn01{
+    width: 270px;
+    height: 36px;
+    border: 1px solid #9b9999;
+    background: url(../img/ursicon.png) no-repeat -23px -24px; 
+}
+.btn01 input{
+    margin-left:40px;
+    margin-top:3px;
+    width:180px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+}
+.btn01 p{
+    float:right;
+    width: 36px;
+    height: 36px;
+    background: url(../img/ursicon1.png) no-repeat -143px -82px; 
+    display: none;
+}
+.btn02{
+    margin-top:20px;
+    width: 270px;
+    height: 36px;
+    border: 1px solid #9b9999;
+}
+.btn02 input:first-child{
+    width: 170px;
+    height: 36px;
+    border: 0;
+    outline: none;
+    text-indent: 20px;
+    float: left;
+}
+.btn02 input:last-child{
+    width: 100px;
+    height: 36px;
+    float: right;
+    border:0;
+    outline: none;
+    border-left:1px solid #9b9999;
+}
+.btn03{
+    margin-top:20px;
+    width: 270px;
+    height: 36px;
+    border: 1px solid #9b9999;
+    background: url(../img/ursicon.png) no-repeat -58px -26px; 
+}
+.btn03 input{
+    margin-left:40px;
+    margin-top:3px;
+    width:180px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+}
+.btn03 p{
+    float:right;
+    width: 36px;
+    height: 36px;
+    background: url(../img/ursicon1.png) no-repeat -143px -82px; 
+    display: none;
+}
+.btn04{
+    width:270px;
+    height: 36px;
+    background: #fb2549;
+    display: block;
+    margin-top:30px;
+}
+.btn04 input{
+    width:270px;
+    height: 36px;
+    background: none;
+    height: 36px;
+    line-height: 36px;
+    color:#ffffff;
+    border:0;
+    outline: none;
+    font-size:16px;
+}
+.btn05{
+    width: 270px;
+    height: 32px;
+}
+.btn05 a{
+    color:#9f9f9f;
+    font-size: 12px;
+    line-height: 32px;
+}
+.btn05 label{
+    color:#9f9f9f;
+    font-size: 12px;
+    line-height: 32px;
+}
+.btn05 span{
+    color:#9f9f9f;
+    font-size: 12px;
+    line-height: 32px;
+}
+.btn06 {
+    width: 270px;
+    height: 28px;
+    position: absolute;
+    top:155px;
+    display: none;
+}
+.btn06 span{
+    display: block;
+    float:left;
+    width: 40px;
+    height: 28px;
+    background: url(../img/ursicon1.png) no-repeat -203px -27px; 
+   
+}
+.btn06 p{
+    float:left;
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+    font-size:14px; 
+    color:#e31436;
+}

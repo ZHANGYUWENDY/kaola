@@ -1,5 +1,5 @@
 var gulp = require("gulp");
-var sass = require("gulp-sass");
+// var sass = require("gulp-sass");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 var connect = require("gulp-connect");
@@ -7,30 +7,30 @@ var connect = require("gulp-connect");
 // 定义一个复制文件的任务
 gulp.task("copyfile",function(){
 	gulp.src("*.html")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\test2"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola"));
 });
 // 复制JS文件
 gulp.task("copyjs",function(){
 	gulp.src("js/*.js")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\test2\\js"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\js"));
 });
 // 复制css文件
 gulp.task("copycss",function(){
 	gulp.src("css/*.css")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\test2\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\css"));
 });
 // 复制图片文件
 gulp.task("images",function(){
 	gulp.src("img/*.*")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\test2\\img"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\img"));
 });
 
 //sass编译
-gulp.task("sass", function () {
-	gulp.src(["css/*.scss"])
-		.pipe(sass())
-		.pipe(gulp.dest("D:\\phpStudy\\WWW\\test2\\css"));
-});
+// gulp.task("sass", function () {
+// 	gulp.src(["css/*.scss"])
+// 		.pipe(sass())
+// 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\css"));
+// });
 
 
 
