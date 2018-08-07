@@ -162,7 +162,7 @@ i{
 }
 .content-reg-right{
     width: 350px;
-    height: 386px;
+    height: 366px;
     float: right;
     margin-top:66px;
     margin-right: 40px;
@@ -194,7 +194,7 @@ i{
 
 .reg-inf{
     width: 270px;
-    height: 332px;
+    height: 270px;
     padding:0 40px;
     background: #ffffff;
     overflow: hidden;
@@ -202,9 +202,10 @@ i{
 .reg-inf form{
     margin-top:35px;
     width: 270px;
-    height: 280px;
+    height: 240px;
     position: relative;
 }
+
 .btn01{
     width: 270px;
     height: 36px;
@@ -220,29 +221,55 @@ i{
     outline: none;
     line-height: 30px;
 }
-.btn01 p{
+.cuowu{
     float:right;
     width: 36px;
     height: 36px;
     background: url(../img/ursicon1.png) no-repeat -143px -82px; 
-    display: none;
 }
 .btn02{
     margin-top:15px;
     width: 270px;
     height: 36px;
-    border: 1px solid #9b9999;
-    
+    border: 1px solid #9b9999;  
 }
 .btn02 span{
-    width: 30px;
+    width: 40px;
     height: 36px;
     display: block;
     float: left;
     background: url(../img/ursicon.png) no-repeat -56px -24px; 
 }
+.btn02 input{
+    margin-top:3px;
+    width:180px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+}
 
-
+.btn03 {
+    width: 270px;
+    height: 28px;
+    position: absolute;
+    top:91px;
+}
+.btn03 span{
+    display: block;
+    float:left;
+    width: 40px;
+    height: 28px;
+    background: url(../img/ursicon1.png) no-repeat -203px -27px;  
+}
+.btn03 p{
+    float:left;
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+    font-size:14px; 
+    color:#e31436;
+}
 
 .btn04{
     width:270px;
@@ -280,4 +307,111 @@ i{
     font-size: 12px;
     line-height: 32px;
 }
+.btn06{
+    margin-top:15px;
+    width: 270px;
+    height: 36px;
+    border: 1px solid #9b9999;  
+}
+.btn06 span{
+    width: 40px;
+    height: 34px;
+    display: block;
+    float: left;
+    background: url(../img/ursicon.png) no-repeat 8px -29px; 
+}
+.btn06 input{
+    margin-top:3px;
+    width:180px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+}
+.btn07{
+    margin-top:15px;
+    width: 270px;
+    height: 36px;
+    border: 1px solid #9b9999;  
+}
+.btn07 span{
+    width: 40px;
+    height: 36px;
+    display: block;
+    float: left;
+    background: url(../img/ursicon.png) no-repeat -56px -24px; 
+}
+.btn07 input{
+    margin-top:3px;
+    width:180px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+}
 
+
+
+
+.shoujilogin{
+    width: 270px;
+    height: 270px;
+    display: none;
+}
+.emaillogin{
+    width: 270px;
+    height: 270px;
+}
+.reg-inf-bott{
+    height: 32px;
+    width: 350px;
+    background: #f8f8f8;
+}
+.reg-inf-bott li:first-child{
+    margin-left:40px;
+    width: 120px;
+    height: 32px;
+    float:left;
+}
+.reg-inf-bott li:first-child a{
+    margin-top:8px;
+    float:left;
+    width: 28px;
+    height: 22px;
+    display: block;
+}
+.reg-inf-bott li:first-child a:nth-child(1){
+    background: url(../img/ursicon2.png) no-repeat -759px -401px;
+}
+.reg-inf-bott li:first-child a:nth-child(2){
+    background: url(../img/ursicon2.png) no-repeat -790px -401px;
+}
+.reg-inf-bott li:first-child a:nth-child(3){
+    background: url(../img/ursicon2.png) no-repeat -819px -401px;
+}
+.reg-inf-bott li:first-child a:nth-child(4){
+    background: url(../img/ursicon2.png) no-repeat -855px -401px;
+}
+.reg-inf-bott li:last-child{
+    float: right;
+    width: 130px;
+    height: 42px;
+    margin-right: 40px;
+}
+.reg-inf-bott li:last-child  a{
+   width: 90px;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    color:#e31436;
+    font-size:14px;
+    float:left; 
+}
+.reg-inf-bott li:last-child  span{
+    float:left;
+     background: url(../img/ursicon2.png) no-repeat -892px -401px;
+     display: block;
+     width: 30px;
+     height: 22px;
+     margin-top:8px;
+}
