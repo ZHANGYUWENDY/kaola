@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,19 +24,19 @@
             </a>
             <div class="content-reg-right">
                 <div class="wel-reg">
-                    <p>手机号登录</p>
-                    <p>邮箱登录</p>
+                    <p class="qqq1 active">手机号登录</p>
+                    <p class="qqq2">邮箱登录</p>
                 </div>
                 <div class="reg-inf">
-                    <form action="">
+                    <form action="login.php" method="post">
                         <div class="shoujilogin">
                                 <div class="btn01">
-                                    <input id="btnphone" type="text" placeholder="请输入手机号">
+                                    <input id="userid" name="username" type="text" placeholder="请输入手机号">
                                     <p class="cuowu"></p>
                                 </div>
                                 <div class="btn02">
                                     <span></span>
-                                    <input type="text" placeholder="请输入密码">
+                                    <input id="passid" name="userpass" type="password" placeholder="请输入密码">
                                     <p class="cuowu"></p>
                                 </div>
                                 <div class="btn03">
@@ -45,15 +44,13 @@
                                     <p id="IpMsg"></p>
                                 </div>
                                 <a class="btn04">
-                                    <input type="button" value="登  录">
+                                    <input id="btnLogin" type="button" value="登  录">
                                 </a>
                                 <p class="btn05">
-                                    <input type="checkbox" checked/>
+                                    <input id="tenday" type="checkbox" checked/>
                                     <label for="checkA">&nbsp;&nbsp;10天免登录</label>
                                     <a href="">忘记密码</a>
-                                </p>
-
-                                                                         
+                                </p>                                                                         
                         </div>
                         <div class="emaillogin">
                             <div class="btn06">
@@ -63,7 +60,7 @@
                             </div>
                             <div class="btn07">
                                 <span></span>
-                                <input type="text" placeholder="密码">
+                                <input type="password" placeholder="密码">
                                 <p class="cuowu"></p>
                             </div>
                             <div class="btn03">
@@ -71,17 +68,15 @@
                                 <p id="IpMsg"></p>
                             </div>
                             <a class="btn04">
-                                <input type="button" value="登  录">
+                                <input id="loginId" type="submit" value="登  录">
                             </a>
                             <p class="btn05">
                                 <input type="checkbox" checked/>
                                 <label for="checkA">&nbsp;&nbsp;10天免登录</label>
                                 <a href="">忘记密码</a>
-                            </p>
-                           
+                            </p>      
                         </div>                      
-                    </form>
-                   
+                    </form>                   
                 </div>
                 <ul class="reg-inf-bott">
                    <li>
@@ -91,7 +86,7 @@
                         <a href=""></a>
                    </li>
                     <li>
-                       <a href="">手机快捷注册</a>
+                       <a href="register.html">手机快捷注册</a>
                        <span></span>
                     </li>
                 
@@ -140,4 +135,54 @@
 </body>
 
 </html>
+<script type="text/javascript" src="js/mycookieUtil.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+<script> 
+    function $(id) {
+            return document.getElementById(id);
+        }
+    window.onload = function () {
+        $("btnLogin").onclick = function () {
+            //创建对象
+            let xhr = new XMLHttpRequest();
+            //设置请求参数
+            xhr.open("post", "login.php", true);
+            //设置回调函数
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.responseText == "1") {
+                        // if($1("tenday").checked==checked){
+                        //     saveCookie("username", $1("userid").value, 7);
+                        // }                       
+                       location.href = "index.html";
+                    } else {
+                        $("IpMsg").style.display = "block";
+                        $("IpMsg").innerHTML = "手机号或者密码不对，请重新输入";
+                    }
+                }
+            }
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            //发送请求
+            let sendstr = "username=" + $("userid").value + "&userpass=" + $("passid").value;
+            xhr.send(sendstr);
+        }
+    }
+
+    // $(function(){
+    //     $('.qqq2').click(function(){
+    //         $('.shoujilogin').css("display","none");
+    //         $('.emaillogin').css("display", "block");            
+    //         $('.qqq2').addClass('active');
+    //         $('.qqq1').removeClass('active');
+    //     });
+    //     $('.qqq1').click(function () {
+    //         $('.shoujilogin').css("display", "block");
+    //         $('.emaillogin').css("display", "none");
+    //         $('.qqq2').removeClass('active');
+    //         $('.qqq1').addClass('active');
+    //     });
+    // });
+   
+</script>
 

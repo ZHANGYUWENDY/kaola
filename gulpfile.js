@@ -24,6 +24,11 @@ gulp.task("images",function(){
 	gulp.src("img/*.*")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\img"));
 });
+//复制php
+gulp.task("copyphp",function(){
+	gulp.src("php/*.php")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\php"));
+});
 
 //sass编译
 // gulp.task("sass", function () {
@@ -51,6 +56,7 @@ gulp.task("images",function(){
 // });
 // 启动监听器
 gulp.task("watchall",function(){
+	gulp.watch("*.php",["copyphp"]);
 	gulp.watch("*.html",["copyfile"]);
 	gulp.watch("js/*.js",["copyjs"]);
 	gulp.watch("css/*.css",["copycss"]);

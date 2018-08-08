@@ -869,8 +869,11 @@
             var _line = parseInt($(window).height()/3);
             $(window).scroll(function () {
                // 滚动730px，右侧导航固定定位
-                if ($(window).scrollTop() > 730) {
+                if ($(window).scrollTop() >  _line) {
                     $('.fl_l').css({ 'display': 'block', })
+                }
+                 if ($(window).scrollTop() <  _line) {
+                    $('.fl_l').css({ 'display': 'none', })
                 }
                 // $('.fl_l li').eq(0).addClass('active');
                 //滚动到标杆位置,右侧导航加active

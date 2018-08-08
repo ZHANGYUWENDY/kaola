@@ -176,15 +176,17 @@ i{
 }
 .wel-reg p{
     height:53px;
-    width: 100px;
+    width: 50%;
     float:left; 
-    margin-left:40px;
+    text-align: center;
     color:#e31436;
     line-height: 53px;
     font-size:16px;
     font-weight: 600;
 }
-
+.active{
+    border-bottom: 2px solid #e31436;
+}
 
 
 
@@ -350,17 +352,14 @@ i{
     line-height: 30px;
 }
 
-
-
-
 .shoujilogin{
     width: 270px;
-    height: 270px;
-    display: none;
+    height: 270px;  
 }
 .emaillogin{
     width: 270px;
     height: 270px;
+     display: none;
 }
 .reg-inf-bott{
     height: 32px;

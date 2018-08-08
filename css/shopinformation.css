@@ -695,7 +695,8 @@ i{
     display: block;
     height: 52px;
     line-height: 52px;
-    width: 56px;
+	width: 56px;
+	
     float:left;
     font-size: 12px;
     color:#999999;
@@ -703,7 +704,8 @@ i{
 .goods-inf-top p{
     display: block;
     height: 52px;
-    line-height: 52px;
+	line-height: 52px;
+	text-align: center;
     width: 16px;
     float:left;
     font-size: 12px;  
@@ -1005,7 +1007,8 @@ i{
 }
 .goods-color {
     width: 581px;
-    height: 174px;
+	height: 174px;
+	
 }
 .goods-color p{
     float:left;
@@ -1031,7 +1034,7 @@ i{
 .yardage {
     width: 100%;
     height: 24px;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 .yardage span{
     float:left;
@@ -1054,4 +1057,125 @@ i{
 .num{
     width: 100%;
     height: 24px;
+    margin:10px 0;
+}
+.num p:nth-child(1){
+    color:#666666;
+    font-size:12px;  
+    height: 24px;
+    line-height: 24px;
+    float:left;
+}
+.num p:nth-child(2){
+     width: 105px;
+     height: 24px;
+     float:left;
+     border: 1px solid #efefef;
+}
+.num p:nth-child(2) a{
+        width: 25px;
+        height: 24px;
+        float:left;
+        display: block;
+      text-align: center;
+}
+.num p:nth-child(2) input{
+     width: 55px;
+     height: 24px;
+     float:left;
+     display: block;
+    box-sizing: border-box;
+     text-align: center;
+     border-left: 1px solid #efefef;
+     border-right: 1px solid #efefef;
+}
+.num p:nth-child(3){
+   color:#666666;
+    font-size:12px;  
+    height: 24px;
+    line-height: 24px;
+    float:left;
+    margin-left:20px;
+}
+.explain{
+    width: 100%;
+    height: 24px;
+    margin:10px 0;
+}
+.explain p:nth-child(1){
+    color:#666666;
+    font-size:12px;  
+    height: 24px;
+    line-height: 24px;
+    float:left;
+}
+
+.explain p:nth-child(2){
+    color:#666666;
+    font-size:12px;  
+    height: 24px;
+    line-height: 24px;
+    float:left;
+}
+.immmbuy{
+    height: 50px;
+    width: 100%;
+    margin:10px 0;
+}
+.immmbuy a{
+    display: block;
+    float:left;
+}
+.immmbuy a:nth-child(1){
+    width:160px ;
+    height:50px ;
+    border:3px solid #d41c44;
+    background:#ffeced ;
+    line-height:44px ;
+    text-align:center;
+    box-sizing: border-box;
+    color:#d41c44;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.immmbuy a:nth-child(1):hover{
+	background: #ffffff;
+}
+.immmbuy a:nth-child(2){
+    width:160px ;
+    height:50px ;
+    background:#d41c44;
+    line-height:44px ;
+    text-align:center;
+    box-sizing: border-box;
+    color:#ffffff;
+    font-size: 18px;
+}
+.immmbuy a:nth-child(2):hover{
+	background: #ff0741;
+}
+
+.immmbuy a:nth-child(3){
+    line-height: 24px;
+    width: 70px;
+	height: 50px;
+	display: block;
+	margin-left:20px;
+   
+}
+.immmbuy a:nth-child(3) i{
+    float:left;
+    color:#d41c44;
+    line-height: 50px;
+    height: 50px;
+	display: block;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.immmbuy a:nth-child(3)  span{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color:#6f6f6f;
 }

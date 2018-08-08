@@ -331,7 +331,7 @@ i{
     height: 28px;
     position: absolute;
     top:155px;
-    display: none;
+    /* display: none; */
 }
 .btn06 span{
     display: block;
