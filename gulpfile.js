@@ -26,7 +26,7 @@ gulp.task("images",function(){
 });
 //复制php
 gulp.task("copyphp",function(){
-	gulp.src("php/*.php")
+	gulp.src("*.php")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\kaola\\php"));
 });
 
